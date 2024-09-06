@@ -18,7 +18,7 @@ jobs:
     - uses: actions/checkout@v4
     - name: Install cross (cross-rs) from GitHub
       run: cargo install cross --git https://github.com/cross-rs/cross
-    - run: cross build --package deno_runtime --target thumbv6m-none-eabi
+    - run: cross build --package deno_ckre --target thumbv6m-none-eabi
     - run: cargo test -p deno_core
     - name: Build
       run: cargo build --verbose
