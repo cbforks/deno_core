@@ -5,7 +5,7 @@ on:
   # Run on any push to main or any tag
   push:
     branches:
-      - main
+      - '*'
     tags:
       - '*'
   # Run on any pull request
